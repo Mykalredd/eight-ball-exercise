@@ -1,0 +1,42 @@
+.color-sets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .color-set {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .changed-label {
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+    .changed-button {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: default;
+      background-color: rgba(60, 10, 120, 0.9);
+      color: white;
+  }
+    

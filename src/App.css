@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 0, 20, 1);
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100%;
+}
+
+/* Styling for the "Change" and "Reset" buttons */
+button {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(60, 10, 120, 0.9);
   color: white;
+  transition: background-color 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: rgb(88, 25, 164);
+  color: gray;
 }
